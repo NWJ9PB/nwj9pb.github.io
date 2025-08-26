@@ -10,80 +10,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body class="bg-slate-900">
-    <div class="grid h-screen place-items-center">
-        <div class="row">
-            <div class="col-span-12">
-                <main class="flex items-center justify-center p-2">
-                    <section class="flex items-center h-full p-8 text-gray-300">
-                        <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-                            <div class="bg-slate-800 p-6 rounded-lg">
-                                <h2 class="mb-8 font-extrabold text-5xl dark:text-gray-400 sm:text-4xl text-center">
-                                    <span class="sr-only">Error</span>Project List
-                                    <div>
-                                        <p class="text-sm font-semibold text-red-200">
-                                            <i class="fa-solid fa-exclamation-triangle"></i>
-                                            All Development efforts are currently halted due to academic reasons
-                                        </p>
-                                        <p class="text-sm font-semibold text-red-200">I will continue these projects and much more if time permits</p>
-                                    </div>
-                                </h2>
-                                <table class="table-auto">
-                                    <thead class="text-center">
-                                        <tr>
-                                            <th class="px-4 py-2">Project</th>
-                                            <th class="px-4 py-2">Description</th>
-                                            <th class="px-4 py-2">Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="px-4 py-2">NXTSystems</td>
-                                            <td class="px-4 py-2">
-                                                <p>
-                                                    <span class="text-sm font-semibold">ArchSystems</span> is a Order Management System, <br>
-                                                    Currently Under-Development and Closed-Sourced for project integrity. <br>
-                                                    Trying to support module-based functions and a simple interface. Will have <br>
-                                                    a order placing, order tracking, item inventory. <br>
-                                                </p>
-                                            </td>
-                                            <td class="px-4 py-2">
-                                                <p class="text-sm font-semibold">
-                                                    <b>
-                                                        <div class="text-orange-300 bg-orange-900 px-3 rounded-sm m-1 p-1"><i class="fa-solid fa-lock fa-fw"></i> Closed Sourced</div>
-                                                        <div class="text-sky-300 bg-sky-900 px-3 rounded-sm m-1 p-1"><i class="fa-solid fa-pause fa-fw"></i> Currently Paused</div>
-                                                        <div class="text-red-300 bg-red-900 px-3 rounded-sm m-1 p-1"><i class="fa-brands fa-laravel fa-fw"></i> Laravel</div>
-                                                        <div class="text-blue-300 bg-blue-900 px-3 rounded-sm m-1 p-1"><i class="fa-brands fa-css3 fa-fw"></i> Tailwind</div>
-                                                    </b>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-4 py-2">TextBlog</td>
-                                            <td class="px-4 py-2">
-                                                <p>
-                                                    <span class="text-sm font-semibold">TextBlog</span> is a simple blogging system, <br>
-                                                    Only supports text, and is currently under development.
-                                                </p>
-                                            </td>
-                                            <td class="px-4 py-2">
-                                                <p class="text-sm font-semibold">
-                                                    <b>
-                                                        <div class="text-orange-300 bg-orange-900 px-3 rounded-sm m-1 p-1"><i class="fa-solid fa-lock fa-fw"></i> Closed Sourced</div>
-                                                        <div class="text-purple-300 bg-purple-900 px-3 rounded-sm m-1 p-1"><i class="fa-solid fa-pause fa-fw"></i> Currently Paused</div>
-                                                        <div class="text-red-300 bg-red-900 px-3 rounded-sm m-1 p-1"><i class="fa-brands fa-laravel fa-fw"></i> Laravel</div>
-                                                        <div class="text-blue-300 bg-blue-900 px-3 rounded-sm m-1 p-1"><i class="fa-brands fa-css3 fa-fw"></i> Tailwind</div>
-                                                    </b>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-                </main>
+  <div class="relative grid min-h-screen grid-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr] bg-gray-950 [--pattern-fg:var(--color-gray-950)]/5">
+    <div class="col-start-3 row-start-3 flex max-w-5xl flex-col">
+      <div class="rounded-xl p-10 text-sm/7 bg-gray-900 text-gray-300">
+        <div class="flex justify-between items-start mb-6">
+        <!-- Left: Project List -->
+            <div>
+                <p class="text-3xl font-semibold"><span class="text-cyan-300 animate-pulse ">Project</span> List</p>
+            </div>
+
+            <!-- Right: NExxT Engine -->
+            <div class="text-right">
+                <p class="text-3xl font-semibold">
+                <span class="text-cyan-500">NExxT</span> 
+                <span class="text-emerald-500">Engine</span>
+                </p>
+                <p class="text-sm">Subsidiary of NExxT Development</p>
             </div>
         </div>
+        <table class="table-auto">
+          <thead class="text-center">
+            <tr>
+              <th class="px-4 py-2">Project</th>
+              <th class="px-4 py-2">Description</th>
+              <th class="px-4 py-2">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2">NXTSystems</td>
+              <td class="px-4 py-2">
+                <p>
+                  <span class="text-sm font-semibold">ArchSystems</span> is a Order Management System, <br />
+                  Currently Under-Development and Closed-Sourced for project integrity. <br />
+                  Will support a module-based system, simple interface, <br />
+                  a order placing, order tracking, item inventory. <br />
+                </p>
+              </td>
+              <td class="px-4 py-2">
+                <p class="text-sm font-semibold">
+                  <b>
+                    <div class="m-1 rounded-sm bg-orange-900 p-1 px-3 text-orange-300"><i class="fa-solid fa-lock fa-fw"></i> Closed Sourced</div>
+                    <div class="m-1 rounded-sm bg-slate-950 p-1 px-3 text-slate-300"><i class="fa-solid fa-pause fa-fw"></i> Currently Paused</div>
+                    <div class="m-1 rounded-sm bg-red-950 p-1 px-3 text-red-300"><i class="fa-brands fa-laravel fa-fw"></i> Laravel</div>
+                    <div class="m-1 rounded-sm bg-blue-900 p-1 px-3 text-blue-300"><i class="fa-brands fa-css3 fa-fw"></i> Tailwind</div>
+                  </b>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2">TextBlog</td>
+              <td class="px-4 py-2">
+                <p>
+                  <span class="text-sm font-semibold">TextBlog</span> is a simple blogging system, <br />
+                  Only supports text, and is currently in planning phase.
+                </p>
+              </td>
+              <td class="px-4 py-2">
+                <p class="text-sm font-semibold">
+                  <b>
+                    <div class="m-1 rounded-sm bg-orange-900 p-1 px-3 text-orange-300"><i class="fa-solid fa-lock fa-fw"></i> Closed Sourced</div>
+                    <div class="m-1 rounded-sm bg-slate-950 p-1 px-3 text-slate-300"><i class="fa-solid fa-pause fa-fw"></i> Currently Paused</div>
+                    <div class="m-1 rounded-sm bg-purple-950 p-1 px-3 text-purple-300"><i class="fa-brands fa-laravel fa-fw"></i> PHP</div>
+                    <div class="m-1 rounded-sm bg-blue-900 p-1 px-3 text-blue-300"><i class="fa-brands fa-css3 fa-fw"></i> Plain CSS</div>
+                  </b>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 </body>
 </html>
